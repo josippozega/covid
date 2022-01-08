@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
-#from plotly.offline import iplot
-#import plotly.graph_objs as go
-#import plotly.express as px
+from plotly.offline import iplot
+import plotly.graph_objs as go
+import plotly.express as px
 from pandas.io.json import json_normalize
 from streamlit.script_runner import StopException, RerunException
 
@@ -74,14 +74,14 @@ else:
     x = ["TotalCases", "TotalDeaths", "TotalRecovered"]
     y = [total, deaths, recovered]
 
-    #layout = go.Layout(
-     #   title = 'World Data',
-     #   xaxis = dict(title = 'Category'),
-     #   yaxis = dict(title = 'Number of cases'),)
+    layout = go.Layout(
+        title = 'World Data',
+        xaxis = dict(title = 'Category'),
+        yaxis = dict(title = 'Number of cases'),)
     
-   # fig.update_layout(dict1 = layout, overwrite = True)
-  #  fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
-  #  st.plotly_chart(fig, use_container_width=True)
+    fig.update_layout(dict1 = layout, overwrite = True)
+    fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
+    st.plotly_chart(fig, use_container_width=True)
 
 st.sidebar.subheader("""Created with 💖 in India by [Harshit Agrawal](https://www.linkedin.com/in/harshit-agrawal-271342110) from """)
 #st.sidebar.image('logo.jpg', width = 300)
