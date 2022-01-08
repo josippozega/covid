@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import requests
-from plotly.offline import iplot
+#from plotly.offline import iplot
 import plotly.graph_objs as go
 import plotly.express as px
 from pandas.io.json import json_normalize
