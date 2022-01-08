@@ -80,7 +80,7 @@ else:
      #   yaxis = dict(title = 'Number of cases'),)
     
    # fig.update_layout(dict1 = layout, overwrite = True)
-    fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
+  #  fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
     st.plotly_chart(fig, use_container_width=True)
 
 st.sidebar.subheader("""Created with 💖 in India by [Harshit Agrawal](https://www.linkedin.com/in/harshit-agrawal-271342110) from """)
