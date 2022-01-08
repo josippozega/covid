@@ -84,4 +84,4 @@ else:
   #  st.plotly_chart(fig, use_container_width=True)
 
 st.sidebar.subheader("""Created with 💖 in India by [Harshit Agrawal](https://www.linkedin.com/in/harshit-agrawal-271342110) from """)
-st.sidebar.image('logo.jpg', width = 300)
+#st.sidebar.image('logo.jpg', width = 300)
