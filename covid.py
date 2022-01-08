@@ -79,7 +79,7 @@ else:
      #   xaxis = dict(title = 'Category'),
      #   yaxis = dict(title = 'Number of cases'),)
     
-    fig.update_layout(dict1 = layout, overwrite = True)
+   # fig.update_layout(dict1 = layout, overwrite = True)
     fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
     st.plotly_chart(fig, use_container_width=True)
 
