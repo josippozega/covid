@@ -8,7 +8,7 @@ import requests
 from pandas.io.json import json_normalize
 from streamlit.script_runner import StopException, RerunException
 
-fig = go.Figure()
+#fig = go.Figure()
 st.write("""
 # Covid19 Tracking App 🚑
 [Coronavirus COVID19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest#81447902-b68a-4e79-9df9-1b371905e9fa) is used to get the data in this app.
