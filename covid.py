@@ -74,10 +74,10 @@ else:
     x = ["TotalCases", "TotalDeaths", "TotalRecovered"]
     y = [total, deaths, recovered]
 
-    layout = go.Layout(
-        title = 'World Data',
-        xaxis = dict(title = 'Category'),
-        yaxis = dict(title = 'Number of cases'),)
+    #layout = go.Layout(
+     #   title = 'World Data',
+     #   xaxis = dict(title = 'Category'),
+     #   yaxis = dict(title = 'Number of cases'),)
     
     fig.update_layout(dict1 = layout, overwrite = True)
     fig.add_trace(go.Bar(name = 'World Data', x = x, y = y))
